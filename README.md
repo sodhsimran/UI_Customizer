@@ -72,16 +72,6 @@ The default configuration (CONFIG_MAIN) is structured as follows
     "color": "#E5E7EB",
     "weight": 0
   },
-  
-  // (Not in config, but part of editor)
-  "effects": {
-    "blur": 0,
-    "brightness": 100,
-    "contrast": 100
-  }
-}
-```
-
 
 
 ## How the editor works
