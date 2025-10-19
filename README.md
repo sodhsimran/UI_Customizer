@@ -73,7 +73,7 @@ The default configuration (CONFIG_MAIN) is structured as follows
     "weight": 0
   },
 
-
+```
 ## How the editor works
 
 
@@ -173,7 +173,7 @@ The initial implementation of the customizer was a single, long list of options 
 
 4. Toast Notifications: Non-blocking feedback is essential. When a color hex code is copied, a small "Toast" appears and fades away. This confirms the action was successful without interrupting the user's flow with a disruptive alert().
 
-**4.Non-Destructive:** "Reset All":Decision: Implement "Reset All" as a new, recorded action rather than a hard reset that clears the history.
+**4. Non-Destructive:** "Reset All":Decision: Implement "Reset All" as a new, recorded action rather than a hard reset that clears the history.
 1.Implementation: The "Reset All" button (<SVGIcons.Undo2 />) dispatches a SET_CONFIG action, just like any other style change. Its payload is simply the original CONFIG_MAIN object and the description "Reset to defaults".
 
 2.Why: This is a crucial, non-destructive UX choice. A user might reset the design and then immediately change their mind. Because the reset is just another entry in the past array, the user can simply click "Undo" to get their complex, custom design back. A destructive reset that clears the history would cause the user to lose all their work.
